@@ -11,7 +11,7 @@ class Feelings extends Component {
   }
 
   handleClickToRedux = () => {
-    // console.log("Working!");
+    console.log("Working!");
     this.props.dispatch({
       type: "FEELINGS_REDUX",
       payload: this.state.feeling,
@@ -33,7 +33,7 @@ class Feelings extends Component {
         <h1 className="hdr-question">How are you feeling today?</h1>
         <form>
           <input
-            // onChange={this.saveFeeling}
+            onChange={this.saveFeeling}
             className="feelings-input"
             type="number"
             placeholder="Insert 1-5 Here"
