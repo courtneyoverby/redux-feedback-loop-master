@@ -3,16 +3,12 @@ import axios from "axios";
 import "./App.css";
 import { HashRouter as Router, Route } from "react-router-dom";
 
-// import Feelings from "../Feelings/Feelings.js";
-// import Understanding from "../Understanding/Understanding.js";
+import Feelings from "../Feelings/Feelings.js";
+import Understanding from "../Understanding/Understanding.js";
+import Support from "../Support/Support.js";
 // import Comments from "../Comments/Comments.js";
-// import Support from "../Support/Support.js";
 
 class App extends Component {
-  componentDidMount() {
-    this.refreshFeedback();
-  }
-
   render() {
     return (
       <div className="App">
@@ -25,13 +21,13 @@ class App extends Component {
         <br />
         <div>
           <div className="container">
-            {/* <Router>
+            <Router>
               <Route exact path="/" component={Feelings} />
               <Route path="/Understanding" component={Understanding} />
-              <Route path="/Comments" component={Comments} />
               <Route path="/Support" component={Support} />
+              {/* <Route path="/Comments" component={Comments} /> */}
             </Router>
-          </div> */}
+          </div>
         </div>
       </div>
     );
