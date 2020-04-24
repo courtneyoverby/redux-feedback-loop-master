@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 
 class Support extends Component {
   state = {
-    supported: 0,
+    support: 0,
     showButton: false,
   };
 
@@ -12,7 +12,7 @@ class Support extends Component {
 
     if (supportedValue > 0 && supportedValue <= 5) {
       this.setState({
-        supported: supportedValue,
+        support: supportedValue,
         showButton: true,
       });
     } else {
