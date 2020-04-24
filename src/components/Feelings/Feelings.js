@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-class PageFeeling extends Component {
+class Feelings extends Component {
   state = {
     feeling: 0,
     showButton: false,
@@ -46,4 +46,4 @@ class PageFeeling extends Component {
   }
 }
 
-export default connect()(PageFeeling);
+export default connect()(Feelings);
