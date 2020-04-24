@@ -29,7 +29,7 @@ class Understanding extends Component {
       payload: this.state.understanding,
     });
     // navigate to next page
-    this.props.history.push("/supported");
+    this.props.history.push("/support");
   };
 
   render() {

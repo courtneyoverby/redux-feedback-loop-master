@@ -6,7 +6,7 @@ import { HashRouter as Router, Route } from "react-router-dom";
 import Feelings from "../Feelings/Feelings.js";
 import Understanding from "../Understanding/Understanding.js";
 import Support from "../Support/Support.js";
-// import Comments from "../Comments/Comments.js";
+import Comments from "../Comments/Comments.js";
 
 class App extends Component {
   render() {
@@ -25,7 +25,7 @@ class App extends Component {
               <Route exact path="/" component={Feelings} />
               <Route path="/Understanding" component={Understanding} />
               <Route path="/Support" component={Support} />
-              {/* <Route path="/Comments" component={Comments} /> */}
+              <Route path="/Comments" component={Comments} />
             </Router>
           </div>
         </div>
