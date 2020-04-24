@@ -7,7 +7,7 @@ class Review extends Component {
     const dataForServer = {
       feeling: this.props.store.feedbackReducer.feeling,
       understanding: this.props.store.feedbackReducer.understanding,
-      supported: this.props.store.feedbackReducer.supported,
+      supported: this.props.store.feedbackReducer.support,
       comments: this.props.store.feedbackReducer.comments,
     };
 

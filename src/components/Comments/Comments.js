@@ -15,7 +15,7 @@ class PageSupported extends Component {
   handleClick = () => {
     // dispatch to reducer
     this.props.dispatch({
-      type: "SET_COMMENTS",
+      type: "SET_COMMENT",
       payload: this.state.comments,
     });
     // navigate to next page

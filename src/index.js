@@ -9,7 +9,7 @@ import logger from "redux-logger";
 const initialState = {
   feeling: 0,
   understanding: 0,
-  supported: 0,
+  support: 0,
   comments: "",
 };
 
@@ -18,7 +18,7 @@ const feedbackReducer = (state = initialState, action) => {
     return { ...state, feeling: action.payload };
   } else if (action.type === "SET_UNDERSTANDING") {
     return { ...state, understanding: action.payload };
-  } else if (action.type === "SET_SUPPORT") {
+  } else if (action.type === "SET_SUPPORTED") {
     return { ...state, support: action.payload };
   } else if (action.type === "SET_COMMENT") {
     return { ...state, comments: action.payload };

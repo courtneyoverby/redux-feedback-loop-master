@@ -8,6 +8,7 @@ import Understanding from "../Understanding/Understanding.js";
 import Support from "../Support/Support.js";
 import Comments from "../Comments/Comments.js";
 import Review from "../Review/Review";
+import Submit from "../Submit/Submit";
 
 class App extends Component {
   render() {
@@ -28,6 +29,7 @@ class App extends Component {
               <Route path="/Support" component={Support} />
               <Route path="/Comments" component={Comments} />
               <Route path="/Review" component={Review} />
+              <Route path="/Submit" component={Submit} />
             </Router>
           </div>
         </div>
