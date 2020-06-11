@@ -9,7 +9,7 @@ import logger from "redux-logger";
 const initialState = {
   feeling: 0,
   understanding: 0,
-  support: 0,
+  supported: 0,
   comments: "",
 };
 

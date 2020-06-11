@@ -13,9 +13,8 @@ router.post("/", (req, res) => {
     .query(queryString, [
       req.body.feeling,
       req.body.understanding,
-      req.body.supported
+      req.body.support,
       req.body.comments,
-      
     ])
     .then((response) => {
       res.sendStatus(200);

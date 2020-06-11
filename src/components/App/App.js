@@ -29,7 +29,6 @@ class App extends Component {
               <Route path="/Support" component={Support} />
               <Route path="/Comments" component={Comments} />
               <Route path="/Review" component={Review} />
-              <Route path="/Submitted" component={Submit} />
             </Router>
           </div>
         </div>
