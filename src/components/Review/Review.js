@@ -7,7 +7,7 @@ class Review extends Component {
     const dataForServer = {
       feeling: this.props.store.feedbackReducer.feeling,
       understanding: this.props.store.feedbackReducer.understanding,
-      supported: this.props.store.feedbackReducer.support,
+      supported: this.props.store.feedbackReducer.supported,
       comments: this.props.store.feedbackReducer.comments,
     };
 
@@ -27,7 +27,7 @@ class Review extends Component {
       <div>
         <p>Feeling: {this.props.store.feedbackReducer.feeling}</p>
         <p>Understanding: {this.props.store.feedbackReducer.understanding}</p>
-        <p>Support: {this.props.store.feedbackReducer.support}</p>
+        <p>Support: {this.props.store.feedbackReducer.supported}</p>
         <p>Comments: {this.props.store.feedbackReducer.comments}</p>
         <div>
           <button onClick={this.handleClick}>Submit</button>

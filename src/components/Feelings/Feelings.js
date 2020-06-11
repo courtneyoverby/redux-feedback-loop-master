@@ -23,6 +23,7 @@ class Feelings extends Component {
   };
 
   handleClick = () => {
+    event.preventDefault;
     // dispatch to reducer
     this.props.dispatch({ type: "SET_FEELING", payload: this.state.feeling });
     // navigate to next page

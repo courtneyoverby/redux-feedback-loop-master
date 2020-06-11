@@ -23,6 +23,7 @@ class Understanding extends Component {
   };
 
   handleClick = () => {
+    event.preventDefault;
     // dispatch to reducer
     this.props.dispatch({
       type: "SET_UNDERSTANDING",

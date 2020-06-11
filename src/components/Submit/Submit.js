@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
-class PageSubmitted extends Component {
+class Submit extends Component {
   handleClick = (event) => {
     this.props.dispatch({ type: "RESET_FEEDBACK" });
     this.props.history.push("/");
@@ -17,4 +17,4 @@ class PageSubmitted extends Component {
   }
 }
 
-export default connect()(PageSubmitted);
+export default connect()(Submit);

@@ -23,6 +23,7 @@ class Support extends Component {
   };
 
   handleClick = () => {
+    event.preventDefault;
     // dispatch to reducer
     this.props.dispatch({
       type: "SET_SUPPORTED",
@@ -36,14 +37,16 @@ class Support extends Component {
     return (
       <div>
         <h1>Did you feel supported today?</h1>
-        <input onChange={this.handleChange} type="number" />
+        <form>
+          <input onChange={this.handleChange} type="number" />
 
-        <div>
-          {!this.state.showButton && <p>Enter a value between 1 - 5</p>}
-          {this.state.showButton && (
-            <button onClick={this.handleClick}>Next</button>
-          )}
-        </div>
+          <div>
+            {!this.state.showButton && <p>Enter a value between 1 - 5</p>}
+            {this.state.showButton && (
+              <button onClick={this.handleClick}>Next</button>
+            )}
+          </div>
+        </form>
       </div>
     );
   }

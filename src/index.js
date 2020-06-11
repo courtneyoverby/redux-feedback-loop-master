@@ -23,6 +23,16 @@ const feedbackReducer = (state = initialState, action) => {
   } else if (action.type === "SET_COMMENT") {
     return { ...state, comments: action.payload };
   }
+
+  if (action.type === "RESET_FEEDBACK") {
+    return {
+      feeling: 0,
+      understanding: 0,
+      supported: 0,
+      comments: "",
+    };
+  }
+
   return state;
 };
 const storeInstance = createStore(
